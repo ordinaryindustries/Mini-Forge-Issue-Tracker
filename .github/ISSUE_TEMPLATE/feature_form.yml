@@ -1,0 +1,14 @@
+name: Feature request
+description: Suggest a new feature.
+title: "Enter a concise title."
+labels: ["feature", "unscreened"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to request a new feature!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter a clear and concise description of the feature.
