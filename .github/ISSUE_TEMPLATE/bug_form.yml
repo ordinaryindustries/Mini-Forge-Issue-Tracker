@@ -15,6 +15,17 @@ body:
     validations:
       required: true
   - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Enter the steps to reproduce the issue.
+      placeholder: |
+        1. Go to ...
+        2. Tap on ...
+        3. See error.
+    validations:
+      required: true
+  - type: textarea
     id: expected-behavior
     attributes:
       label: Expected behavior
@@ -24,8 +35,15 @@ body:
   - type: input
     id: device-type
     attributes:
-      label: Device information
+      label: Device type
       description: What device did this happen on? e.g. iPhone 14 Pro Max
+    validations:
+      required: true
+  - type: input
+    id: device-os
+    attributes:
+      label: Operating system version
+      description: What operating system version did this happen on? e.g. iOS 16.4. This can be found in Settings > General > About.
     validations:
       required: true
   - type: input
