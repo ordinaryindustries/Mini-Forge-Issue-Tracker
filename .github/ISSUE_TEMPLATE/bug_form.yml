@@ -58,6 +58,7 @@ body:
     attributes:
       label: Attach screenshots
       description: Use the attachment button to attach any relevant screenshots of the issue.
+      placeholder: "Drag photos here to attach them."
   - type: textarea
     id: additional-info
     attributes:
