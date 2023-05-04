@@ -1,0 +1,47 @@
+name: Bug Report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug", "unscreened"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out a bug report!
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter a clear and concise description of the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen? What should have happened?
+    validations:
+      required: true
+  - type: input
+    id: device-type
+    attributes:
+      label: Device information
+      description: What device did this happen on? e.g. iPhone 14 Pro Max
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: What app version did this occur on?
+      description: This can be found in the "What's New" section of the app.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attach screenshots
+      description: Use the attachment button to attach any relevant screenshots of the issue.
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional information
+      description: Enter any extra info that may help debug the issue.
